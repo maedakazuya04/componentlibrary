@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'BaseOne';
+  src: url('../fonts/BaseOne/BaseOne-Regular.otf') format('opentype');
+  }
+
+.form {
+  padding: 100px 0 0 0;
+}
+
+.input-wrapper {
+  margin: 0 auto;
+  position: relative;
+  width: 392px;
+}
+
+.label {
+  color: #8F8F8F;
+  cursor: text;
+  font-family: 'BaseOne';
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 4px;
+  letter-spacing: 0.1em;
+  line-height: 16px;
+  top: 0;
+  transition: all 0.2s;
+}
+
+.input {
+  border-bottom: solid 1px #8F8F8F;
+  height: 24px;
+  padding: 4px;
+  width: 384px;
+}
+
+.input:focus, .input.filled {
+  border-bottom: 2px solid #000;
+}
+
+.input:focus + label,
+.input.is-active + label {
+  color: #000;
+  font-size: 8px;
+  left: 0;
+  line-height: 12px;
+  top: -8px;
+}
