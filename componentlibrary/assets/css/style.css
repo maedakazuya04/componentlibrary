@@ -36,7 +36,8 @@
   width: 384px;
 }
 
-.input:focus, .input.filled {
+.input:focus,
+.input.is-active {
   border-bottom: 2px solid #000;
 }
 
